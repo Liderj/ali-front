@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="me">
-      <img class="avatar ignore" src="../../assets/avatar.jpeg" alt="">
+      <img class="avatar" src="../../assets/avatar.jpeg" alt="">
       <span>兔子先生ai____</span>
       <p>一生总有太多的遗憾。你的遗憾是什么？</p>
       <p>我没有温柔 | 唯有宠溺</p>
