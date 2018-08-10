@@ -13,12 +13,9 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", "shouxie", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
-@font-face {
-  font-family: "shouxie";
-  src: url("./assets/fonts/shoushu.ttf") format("truetype");
+html {
+  background: url("./assets/bg.jpg") repeat;
 }
 </style>
