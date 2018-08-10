@@ -3,8 +3,8 @@
     <div class="me">
       <img class="avatar" src="../../assets/avatar.jpeg" alt="">
       <span>兔子先生ai____</span>
-      <p>一生总有太多的遗憾。你的遗憾是什么？</p>
-      <p>我没有温柔 | 唯有宠溺</p>
+      <p class="ignore">一生总有太多的遗憾。你的遗憾是什么？</p>
+      <p class="ignore">我没有温柔 | 唯有宠溺</p>
     </div>
   </div>
 </template>
@@ -38,9 +38,9 @@ export default {};
   }
   p {
     font-family: "BernhardFashionBT-Regular";
-    font-size: 14px;
+    font-size: 28px;
     color: #fff;
-    margin: 20px 0;
+    margin: 40px 0;
   }
 }
 </style>
