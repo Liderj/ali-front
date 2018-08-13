@@ -12,5 +12,13 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  beforeCreate() {
+    console.log(new Date().getTime());
+  },
+  mounted() {
+    this.$nextTick(() => {
+      console.log(new Date().getTime());
+    })
+  }
 })

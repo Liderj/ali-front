@@ -15,7 +15,4 @@ export default {
 #app {
   height: 100%;
 }
-html {
-  background: url("./assets/bg.jpg") repeat;
-}
 </style>
