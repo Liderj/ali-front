@@ -1,34 +1,39 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import wangYi from './wangyi.js'
+import duitang from './duitang.js'
+
+
 
 const home = () => import('@/pages/home/index')
-const duiTang = () => import('@/pages/duitang/index')
+const pageList = () => import('@/pages/home/pageList')
+
+
+let manRouts = [
+  {
+    path: '/',
+    name: 'home',
+    component: home
+  },
+  {
+    path: '/pageList',
+    component: pageList
+  }
+]
+
 Vue.use(Router)
 
 const router = new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: home
-    },
-    {
-      path: '/duitang',
-      component: duiTang
-    }
-  ]
+  routes: [...manRouts, ...duitang, ...wangYi]
 })
 router.beforeEach((to, from, next) => {
   next()
 })
 router.beforeResolve((to, from, next) => {
-  console.log('解析' + new Date().getTime());
   next()
 }
 )
 router.afterEach((to, from) => {
-  console.log('结束' + new Date().getTime());
-
 })
 
 export default router
