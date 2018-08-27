@@ -7,6 +7,7 @@
         </router-link>
       <p class="ignore">我没有温柔 | 唯有宠溺</p>
     </div>
+    <div class="footer">by、兔子先生的练习日记</div>
   </div>
 </template>
 <script>
@@ -22,6 +23,15 @@ export default {};
   flex-flow: column;
   align-items: center;
   color: #fff;
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #eee;
+    font-size: 20px;
+  }
 }
 .me {
   display: flex;

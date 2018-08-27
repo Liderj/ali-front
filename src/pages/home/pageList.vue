@@ -1,22 +1,24 @@
 <template>
- <div class="page-list">
-     <router-link to="duitang">
-       <div class="page-item">
-       <img src="../../assets/icon/duitang_logo.png" alt="">
-      <!-- <span>
-        堆糖
-      </span> -->
-   </div>
+  <div class="page-list">
+    <router-link to="duitang" class="page-item">
+       <svg class="icon" aria-hidden="true">
+          <use xlink:href="#rabbit-duitang"></use>
+        </svg>
+       <span>堆糖</span>
      </router-link>
-     <router-link to="wangyi">
-    <div class="page-item">
-       <img src="../../assets/icon/wangyimusic_logo.png" alt="">
-       <!-- <span>
-          网易云
-         </span> -->
-    </div>
-     </router-link>
- </div>
+     <router-link to="wangyi" class="page-item">
+      <svg class="icon" aria-hidden="true">
+          <use xlink:href="#rabbit-wangyiyun"></use>
+        </svg>
+       <span>网易云</span>
+     </router-link> 
+    <router-link to="diary" class="page-item">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#rabbit-diary"></use>
+        </svg>
+        <span>日记本</span>
+    </router-link>
+  </div>
 </template>
 <script>
 export default {};
@@ -24,22 +26,22 @@ export default {};
 <style lang="less" scoped>
 .page-list {
   padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   .page-item {
-    display: flex;
-    // background: url("../../assets/bg.jpg") repeat;
-    // box-shadow: 10px 8px 2px #000;
     border: 1px solid #eee;
-    border-radius: 20px;
-    padding: 0px 10px;
-    height: 200px;
-    margin-top: 40px;
+    flex: 0 0 25%;
+    display: flex;
     flex-flow: column;
+    padding: 40px 0;
     align-items: center;
-    // color: #fff;
     justify-content: center;
+    color: #343434;
     img {
-      width: 80px;
-      border-radius: 8px;
+      width: 40px;
+      height: 40px;
     }
     span {
       margin-top: 10px;

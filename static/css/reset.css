@@ -304,3 +304,10 @@ textarea::-webkit-input-placeholder {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  overflow: hidden;
+}
