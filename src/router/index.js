@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import wangYi from './wangyi.js'
 import duitang from './duitang.js'
+import diary from './diary.js'
 
 
 
@@ -24,7 +25,7 @@ let manRouts = [
 Vue.use(Router)
 
 const router = new Router({
-  routes: [...manRouts, ...duitang, ...wangYi]
+  routes: [...manRouts, ...duitang, ...wangYi, ...diary]
 })
 router.beforeEach((to, from, next) => {
   next()

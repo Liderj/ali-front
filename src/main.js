@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import service from './fetch/index'
 
 Vue.config.productionTip = false
-
+Vue.prototype.axios = service
 
 /* eslint-disable no-new */
 new Vue({
