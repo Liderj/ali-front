@@ -1,11 +1,13 @@
-const duiTang = () => import('@/pages/duiTang/index')
-
-
+const duiTang = () => import('@/pages/duitang/index')
+const serach = () => import('@/pages/duitang/serach')
 
 export default [
   {
     path: '/duiTang',
     component: duiTang,
-    // child: []
+  },
+  {
+    path: '/duiTang/serach',
+    component: serach
   }
 ]
