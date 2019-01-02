@@ -4,9 +4,7 @@ export default {
   install(Vue, options) {
     const load = Vue.extend(LoadingComponent)
     let loading = null
-    // console.log($vm);
     function $loading() {
-      // return new Promise((resolve) => {
       // 第一次调用
       if (!loading) {
         loading = new load()
@@ -17,12 +15,8 @@ export default {
       }
       // 显示loading
       loading.showLoad()
-      // resolve()
-      // })
-
     }
     $loading.hide = function() {
-      console.log(loading);
       if (!loading || !loading.show) {
         return
       }

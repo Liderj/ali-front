@@ -35,7 +35,7 @@
             .dot {
                 width: 20px;
                 height: 20px;
-                background: #00e676;
+                background: #ff7e7e;
                 border-radius: 50%;
                 position: absolute;
                 top: calc(50% - 10px);

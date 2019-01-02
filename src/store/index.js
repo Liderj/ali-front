@@ -9,6 +9,12 @@ const state = {
 
 export default new Vuex.Store({
   state,
+  mutations: {
+
+  },
+  actions: {
+
+  },
   modules: {
     duitang: duitang
   }

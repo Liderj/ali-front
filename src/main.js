@@ -13,9 +13,16 @@ Vue.prototype.$axios = service
 
 
 import loadingPlugin from './plugins/loading'
-
 Vue.use(loadingPlugin)
+import lazyImg from './plugins/lazyImg'
+Vue.use(lazyImg)
 
+import Lazyload from "vue-lazyload-img"
+Vue.use(Lazyload,{
+   fade: true,
+   time: 300,
+   preload: 0,
+})
 
 
 /* eslint-disable no-new */
